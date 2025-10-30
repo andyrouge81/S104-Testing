@@ -9,6 +9,7 @@ public class Main {
 
 		Library library1 = new Library();
 
+		library1.addBooksToLibrary();
 
         System.out.println(library1.showLibrary());
 
@@ -37,7 +38,6 @@ public class Main {
 
 		System.out.println();
 		System.out.println(library1.showLibrary());
-
 
 
 	}

@@ -23,9 +23,6 @@ public class Book {
 	public String getAutor(){
 		return this.author;}
 
-	public int getIdISBN() {
-		return idISBN;
-	}
 
 	@Override
 	public String toString(){

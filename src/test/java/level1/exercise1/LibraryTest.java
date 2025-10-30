@@ -1,4 +1,5 @@
-/**package level1.exercise1;
+package level1.exercise1.dataClass;
+
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -7,8 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class LibraryTest {
 
@@ -26,8 +26,8 @@ public class LibraryTest {
 
 	@Test
 	void givenTwoBooks_whenAddBooks_thenConfirmListHasExpectedSize(){
-		Library library2 = new Library();
 
+		Library library2 = new Library();
 
 		Book book3 = new Book("Planet Mercury","Frank Coverman");
 		Book book4 = new Book("Planet Mars","Dimitry Stalinskov");
@@ -46,7 +46,7 @@ public class LibraryTest {
 		Library library2 = new Library();
 
 
-		Book book5 = new Book("Planet Urane", "Rudolf Caspino");
+		Book book5 = new Book("Planet Uranus", "Rudolf Caspino");
 		library2.addBook(book5);
 
 		int expectedIndex = 0;
@@ -186,4 +186,4 @@ public class LibraryTest {
 
 
 	}
-}*/
+}

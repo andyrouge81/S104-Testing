@@ -2,10 +2,10 @@ package level1.exercise1.dataClass;
 
 import java.util.ArrayList;
 
-import java.util.Comparator;
+
 import java.util.List;
 
-public class Library implements Comparable<Book> {
+public class Library {
 
 	private List<Book> library;
 
@@ -13,7 +13,6 @@ public class Library implements Comparable<Book> {
 	public Library() {
 
 		this.library = new ArrayList<>();
-		addBooksToLibrary(this.library);
 
 	}
 
@@ -23,17 +22,7 @@ public class Library implements Comparable<Book> {
 		return this.library;
 	}
 
-	@Override
-	public int compareTo(Book o) {
-		for(int i=0;i< library.size();i++){
-			int compareName = this.library.get(i).getAutor().compareTo(o.getAutor());
-			if (compareName == 0){
 
-			return compareName;
-			}
-		}
-		return 0;
-	}
 
 
 
@@ -70,11 +59,11 @@ public class Library implements Comparable<Book> {
 
 	}
 
-	private void addBooksToLibrary(List<Book> books){
-		books.add(new Book("Planet Earth","John Silverman"));
-		books.add( new Book("Planet Saturn","Steve Goldman"));
-		books.add(new Book("Planet Saturn","Frank Coverman"));
-		books.add(new Book("Planet Mars","Dimitry Stalinskov"));
+	public void addBooksToLibrary(){
+		library.add(new Book("Planet Earth","John Silverman"));
+		library.add( new Book("Planet Saturn","Steve Goldman"));
+		library.add(new Book("Planet Saturn","Frank Coverman"));
+		library.add(new Book("Planet Mars","Dimitry Stalinskov"));
 
 	}
 }
